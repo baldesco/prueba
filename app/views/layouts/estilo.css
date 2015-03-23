@@ -1,0 +1,17 @@
+.navbar{
+    margin-top: 20px;
+  }
+
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      max-height: 200px;
+      margin: auto;
+}
+
+  .footer { 
+    display: block;
+    background-color: red;
+    color: white;
+}
