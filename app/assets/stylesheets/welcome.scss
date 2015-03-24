@@ -1,3 +1,63 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$color-primary=#0099ff;
+ $padding-default=5px;
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+
+ * {
+    font-size:15px;
+    color:#000;
+}
+a {
+    text-decoration:none;
+}
+header {
+    @include border-radius(20px);
+    background-color:$color-primary;
+    padding-top:5px;
+    padding-bottom:5px;
+    ul {
+        list-style:none;
+        overflow:hidden;
+    }
+    ul li {
+        float:left;
+        width:20%;
+    }
+    ul a {
+        display:block;
+    }
+    ul a:hover {
+        color:white;
+    }
+}
+#main {
+    overflow:hidden;
+    background-color:#99d6ff;
+}
+#articles {
+    width:75%;
+    float:left;
+    padding-left:5px;
+    padding-right:5px;
+    article h1 {
+    color:red;
+    text-decoration:underline;
+    font-size:1.2em;
+    }
+    article p {
+    text-align:justify;
+    }
+
+}
+#sidebar {
+    float:right;
+    width:20%;
+}
